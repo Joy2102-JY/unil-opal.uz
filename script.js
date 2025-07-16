@@ -375,3 +375,6 @@ document.addEventListener('DOMContentLoaded', function() {
         element.textContent = new Date().getFullYear();
     });
 });
+document.getElementById('navToggle').onclick = function() {
+  document.getElementById('mainNav').classList.toggle('open');
+};

@@ -228,3 +228,26 @@
         width: 24px;
     }
 }
+@media (max-width: 700px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-nav.open {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 701px) {
+  .nav-toggle {
+    display: none;
+  }
+}
