@@ -1,0 +1,64 @@
+.hero-section {
+    position: relative;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('../images/REDCAR.jpg') center center/cover no-repeat;
+    z-index: 1;
+    filter: brightness(0.65) blur(1px);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    padding: 64px 18px 56px 18px;
+}
+
+.hero-content h1 {
+    font-size: 2.3em;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #fff;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.25);
+}
+
+.hero-content p {
+    font-size: 1.25em;
+    margin-bottom: 28px;
+    color: #f3f3f3;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.18);
+}
+
+.hero-content .btn {
+    font-size: 1.1em;
+    padding: 14px 36px;
+    border-radius: 6px;
+    background: #e6001f;
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: background 0.2s;
+}
+
+.hero-content .btn:hover {
+    background: #b80018;
+}
+
+@media (max-width: 700px) {
+    .hero-content h1 {
+        font-size: 1.3em;
+    }
+    .hero-section {
+        min-height: 220px;
+    }
+}

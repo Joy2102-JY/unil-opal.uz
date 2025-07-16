@@ -1,0 +1,1094 @@
+section {
+    padding: 60px 0;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+section h1, section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #004D99;
+}
+
+.intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    min-width: 250px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Features & Main Links Cards */
+.features-grid, .main-links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.feature-item, .main-link-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 22px 28px 22px;
+    flex: 1 1 220px;
+    min-width: 220px;
+    max-width: 320px;
+    text-align: left;
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feature-item:hover, .main-link-card:hover {
+    box-shadow: 0 8px 32px rgba(0,102,204,0.13);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.feature-item h3, .main-link-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.13em;
+    color: #0066cc;
+    font-weight: 700;
+}
+
+.feature-item p, .main-link-card p {
+    color: #444;
+    font-size: 1em;
+    margin: 0;
+}
+
+.contact-section {
+  padding: 48px 0 32px 0;
+}
+.contact-section h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+}
+.contact-section .intro-text {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #444;
+  font-size: 1.1rem;
+}
+.contact-grid {
+  display: flex;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.contact-form {
+  flex: 1 1 340px;
+  min-width: 280px;
+  background: #f7f9fa;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 32px 24px;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+}
+.contact-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+.contact-form .btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background: #1a6d1a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+.contact-form .btn:hover {
+  background: #155a15;
+}
+.contact-info {
+  flex: 1 1 340px;
+  min-width: 280px;
+  background: #fffbe7;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 32px 24px;
+}
+.contact-info h2 {
+  font-size: 1.15rem;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  color: #1a2a3a;
+}
+.contact-info p {
+  margin-bottom: 10px;
+  color: #444;
+}
+.yandex-map-container {
+  margin-top: 24px;
+}
+.yandex-map-container h3 {
+  font-size: 1.08rem;
+  margin-bottom: 10px;
+}
+.yandex-map-container iframe {
+  width: 100% !important;
+  max-width: 100%;
+  height: 320px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  background: #e5e7eb;
+}
+@media (max-width: 900px) {
+  .contact-grid {
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 10px;
+  }
+  .contact-form, .contact-info {
+    padding: 24px 10px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-section h1 {
+    font-size: 1.3rem;
+  }
+  .contact-section .intro-text {
+    font-size: 1rem;
+  }
+  .yandex-map-container iframe {
+    height: 200px;
+  }
+}
+
+.oem-logos-grid img {
+    height: 40px;
+    width: auto;
+    max-width: 120px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    padding: 8px;
+    margin: 8px;
+}
+
+/* Product grid improvements */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.product-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    padding: 18px;
+    flex: 1 1 260px;
+    max-width: 280px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.product-card h2, .product-card h3 {
+    font-size: 1.1em;
+    margin: 12px 0 8px 0;
+    color: #35424a;
+}
+
+.product-card p {
+    font-size: 0.98em;
+    color: #444;
+}
+
+.image-gallery {
+    margin: 32px 0;
+}
+
+.gallery-grid {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.gallery-grid img {
+    max-width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: transform 0.2s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.04);
+}
+
+@media (max-width: 900px) {
+    .contact-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .product-grid {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .product-card {
+        max-width: 100%;
+    }
+    .features-grid, .main-links-grid {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+    .feature-item, .main-link-card {
+        max-width: 100%;
+    }
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.feature-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+.feature-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+/* styles/sections.css */
+
+/* --- General Section Styling (reused from global if not specific) --- */
+/*
+If you've put `section` styles in global.css, you might not need them here,
+but I'm including them for clarity if you prefer to keep section-level styles in sections.css.
+*/
+.container section {
+    padding: 40px; /* More padding inside sections */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+/* --- Certificates and Standards Section --- */
+section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto; /* Center text and add bottom margin */
+    font-size: 1.1em;
+    color: #555;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 25px; /* Space between items */
+    padding: 20px 0;
+}
+
+.feature-item {
+    background-color: #f0f8ff; /* Light blue background for feature items */
+    border-left: 5px solid #007bff; /* Blue accent bar */
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.feature-item h3 {
+    font-size: 1.8em; /* Bigger heading for each feature */
+    color: #004085;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #666;
+    margin: 0; /* Remove default paragraph margin within item */
+    text-align: center; /* Ensure text is centered */
+}
+
+/* --- OEM Approvals Section --- */
+.oem-logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive grid for logos */
+    gap: 30px;
+    justify-items: center; /* Center logos within their grid cells */
+    align-items: center;
+    padding: 30px 0;
+    border-top: 1px dashed #eee;
+    border-bottom: 1px dashed #eee;
+    margin-bottom: 30px;
+}
+
+.oem-logos-grid img {
+    max-height: 60px; /* Control logo size */
+    width: auto;
+    filter: grayscale(80%); /* Desaturate logos for a clean look */
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.oem-logos-grid img:hover {
+    filter: grayscale(0%); /* Full color on hover */
+    opacity: 1;
+}
+
+.oem-examples-text {
+    font-size: 1.1em;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.oem-examples-text strong {
+    color: #000;
+}
+
+/* --- Advanced Technologies Section --- */
+.tech-feature {
+    background-color: #fbfdff; /* Slightly different light background */
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border-left: 4px solid #17a2b8; /* Cyan accent */
+}
+
+.tech-feature:last-child {
+    margin-bottom: 0;
+}
+
+.tech-feature:hover {
+    background-color: #eaf6ff;
+    border-left-color: #007bff;
+}
+
+.tech-feature h3 {
+    font-size: 1.6em;
+    color: #004085;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.tech-feature p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    text-align: left; /* Align text left within feature */
+    margin-left: 0; /* Reset margin */
+    max-width: none; /* Reset max-width */
+}
+
+/* --- Premium Value Proposition Block --- */
+.premium-value-prop {
+    background-color: #007bff; /* Primary blue background */
+    color: #fff; /* White text */
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    margin: 60px auto; /* Center and give vertical space */
+    max-width: 900px; /* Limit width */
+    position: relative; /* For any pseudo-elements */
+    overflow: hidden; /* For background effects */
+}
+
+.premium-value-prop::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    opacity: 0.3;
+    animation: pulse 4s infinite alternate; /* Subtle animation */
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.3; }
+    100% { transform: scale(1.1); opacity: 0.5; }
+}
+
+.premium-value-prop h2 {
+    color: #fff; /* White heading */
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.premium-value-prop h2::after {
+    background-color: #fff; /* White underline for H2 */
+}
+
+.premium-value-prop p {
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.premium-value-prop .cta-phrase {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e6f2ff; /* Lighter blue for CTA */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    display: inline-block; /* To make border appear around text */
+}
+
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablet (e.g., 768px and up) */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3.2em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns for certificates */
+    }
+
+    .oem-logos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* More columns for logos */
+    }
+
+    .tech-feature {
+        display: flex; /* Use flex for tech features */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .tech-feature h3 {
+        margin-right: 20px; /* Space out heading and paragraph */
+        min-width: 250px; /* Give heading some fixed width */
+    }
+
+    .premium-value-prop h2 {
+        font-size: 3.5em;
+    }
+}
+
+/* Desktop (e.g., 1024px and up) */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3.8em;
+    }
+
+    h2 {
+        font-size: 2.8em;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr); /* Four columns for certificates */
+    }
+
+    .oem-logos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* More columns for logos */
+    }
+
+    .tech-feature {
+        padding: 40px; /* More padding on desktop */
+    }
+}
+
+/* Larger Desktop (e.g., 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1100px; /* Adjust max width for very large screens */
+    }
+    .premium-value-prop {
+        max-width: 1000px;
+    }
+}
+/* styles/sections.css */
+
+/* --- General Section Styling (reused from global if not specific) --- */
+/*
+If you've put `section` styles in global.css, you might not need them here,
+but I'm including them for clarity if you prefer to keep section-level styles in sections.css.
+*/
+.container section {
+    padding: 40px; /* More padding inside sections */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+/* --- Certificates and Standards Section --- */
+section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto; /* Center text and add bottom margin */
+    font-size: 1.1em;
+    color: #555;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 25px; /* Space between items */
+    padding: 20px 0;
+}
+
+.feature-item {
+    background-color: #f0f8ff; /* Light blue background for feature items */
+    border-left: 5px solid #007bff; /* Blue accent bar */
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.feature-item h3 {
+    font-size: 1.8em; /* Bigger heading for each feature */
+    color: #004085;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #666;
+    margin: 0; /* Remove default paragraph margin within item */
+    text-align: center; /* Ensure text is centered */
+}
+
+/* --- OEM Approvals Section --- */
+.oem-logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive grid for logos */
+    gap: 30px;
+    justify-items: center; /* Center logos within their grid cells */
+    align-items: center;
+    padding: 30px 0;
+    border-top: 1px dashed #eee;
+    border-bottom: 1px dashed #eee;
+    margin-bottom: 30px;
+}
+
+.oem-logos-grid img {
+    max-height: 60px; /* Control logo size */
+    width: auto;
+    filter: grayscale(80%); /* Desaturate logos for a clean look */
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.oem-logos-grid img:hover {
+    filter: grayscale(0%); /* Full color on hover */
+    opacity: 1;
+}
+
+.oem-examples-text {
+    font-size: 1.1em;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.oem-examples-text strong {
+    color: #000;
+}
+
+/* --- Advanced Technologies Section --- */
+.tech-feature {
+    background-color: #fbfdff; /* Slightly different light background */
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border-left: 4px solid #17a2b8; /* Cyan accent */
+}
+
+.tech-feature:last-child {
+    margin-bottom: 0;
+}
+
+.tech-feature:hover {
+    background-color: #eaf6ff;
+    border-left-color: #007bff;
+}
+
+.tech-feature h3 {
+    font-size: 1.6em;
+    color: #004085;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.tech-feature p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    text-align: left; /* Align text left within feature */
+    margin-left: 0; /* Reset margin */
+    max-width: none; /* Reset max-width */
+}
+
+/* --- Premium Value Proposition Block --- */
+.premium-value-prop {
+    background-color: #007bff; /* Primary blue background */
+    color: #fff; /* White text */
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    margin: 60px auto; /* Center and give vertical space */
+    max-width: 900px; /* Limit width */
+    position: relative; /* For any pseudo-elements */
+    overflow: hidden; /* For background effects */
+}
+
+.premium-value-prop::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    opacity: 0.3;
+    animation: pulse 4s infinite alternate; /* Subtle animation */
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.3; }
+    100% { transform: scale(1.1); opacity: 0.5; }
+}
+
+.premium-value-prop h2 {
+    color: #fff; /* White heading */
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.premium-value-prop h2::after {
+    background-color: #fff; /* White underline for H2 */
+}
+
+.premium-value-prop p {
+    font-size: 1.2em;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.premium-value-prop .cta-phrase {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e6f2ff; /* Lighter blue for CTA */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    display: inline-block; /* To make border appear around text */
+}
+
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablet (e.g., 768px and up) */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3.2em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns for certificates */
+    }
+
+    .oem-logos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* More columns for logos */
+    }
+
+    .tech-feature {
+        display: flex; /* Use flex for tech features */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .tech-feature h3 {
+        margin-right: 20px; /* Space out heading and paragraph */
+        min-width: 250px; /* Give heading some fixed width */
+    }
+
+    .premium-value-prop h2 {
+        font-size: 3.5em;
+    }
+}
+
+/* Desktop (e.g., 1024px and up) */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3.8em;
+    }
+
+    h2 {
+        font-size: 2.8em;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr); /* Four columns for certificates */
+    }
+
+    .oem-logos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* More columns for logos */
+    }
+
+    .tech-feature {
+        padding: 40px; /* More padding on desktop */
+    }
+}
+
+/* Larger Desktop (e.g., 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1100px; /* Adjust max width for very large screens */
+    }
+    .premium-value-prop {
+        max-width: 1000px;
+    }
+}
+.premium-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.premium-content {
+  background: #fffbe7;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 32px 28px;
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+  text-align: center;
+}
+.premium-description {
+  font-size: 1.18rem;
+  margin-bottom: 18px;
+  color: #444;
+}
+.premium-cta {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #1a6d1a;
+}
+@media (max-width: 700px) {
+  .premium-title {
+    font-size: 1.3rem;
+  }
+  .premium-content {
+    padding: 16px 6px;
+  }
+  .premium-description {
+    font-size: 1rem;
+  }
+  .premium-cta {
+    font-size: 0.98rem;
+  }
+}
+    /* Inherits general h2 styles, but you can override if needed */
+
+/* Logos Line */
+.oem-logos-line {
+    display: flex;
+    justify-content: center; /* Center logos when there's space */
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent wrapping initially */
+    gap: 30px; /* Space between logos */
+    padding: 20px 0;
+    margin: 30px 0;
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+.oem-logos-line::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+.oem-logos-line .inline-oem-logo {
+    display: block; /* Ensure it behaves as a block within flex */
+    flex-shrink: 0; /* Prevent logos from shrinking */
+    height: 50px; /* Standardize logo height */
+    width: auto;
+    filter: grayscale(80%); /* Desaturate for subtle look */
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.oem-logos-line .inline-oem-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* OEM Examples Text (Intro for the list) */
+.oem-examples-text {
+    font-size: 1.1em;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px; /* Space before the list */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600; /* Make it a bit bolder */
+}
+
+/* Approvals List */
+.oem-approvals-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px; /* Limit width of the list */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 15px; /* Space between list items */
+}
+
+.oem-approvals-list li {
+    background-color: #f7faff; /* Light background for list items */
+    padding: 15px 20px;
+    border-left: 4px solid #007bff; /* Blue accent bar */
+    border-radius: 5px;
+    font-size: 1.05em;
+    color: #333;
+    display: flex;
+    align-items: center; /* Vertically align content */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.oem-approvals-list li:hover {
+    background-color: #eaf3ff;
+    border-left-color: #0056b3;
+}
+
+.oem-approvals-list li strong {
+    color: #004085;
+    min-width: 120px; /* Give space for the brand name */
+    display: inline-block; /* Ensure min-width works */
+    margin-right: 10px;
+}
+
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Tablet (e.g., 768px and up) */
+@media (min-width: 768px) {
+    .oem-logos-line {
+        justify-content: space-around; /* Distribute logos more evenly */
+        flex-wrap: wrap; /* Allow wrapping on larger screens if needed */
+        overflow-x: visible; /* Disable horizontal scroll on larger screens */
+    }
+
+    .oem-logos-line .inline-oem-logo {
+        height: 60px; /* Slightly larger logos on tablets */
+    }
+
+    .oem-approvals-list {
+        grid-template-columns: 1fr 1fr; /* Two columns for approvals list */
+    }
+
+    .oem-approvals-list li {
+        padding: 20px 25px;
+    }
+}
+
+/* Desktop (e.g., 1024px and up) */
+@media (min-width: 1024px) {
+    .oem-logos-line .inline-oem-logo {
+        height: 70px; /* Even larger logos on desktop */
+    }
+
+    .oem-approvals-list {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for approvals list */
+    }
+}
+.oem-logos-big {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+  margin: 32px 0 18px 0;
+}
+.oem-logos-big img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  background: #f7f7f7;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  padding: 18px;
+  transition: transform 0.2s;
+}
+@media (max-width: 600px) {
+  .oem-logos-big img {
+    width: 100px;
+    height: 100px;
+    padding: 8px;
+  }
+}
+.oem-approvals-list-big {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  font-size: 1.08rem;
+}
+.oem-approvals-list-big li {
+  background: #f2f2f2;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+}
+.section-change-explanation {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 24px 18px;
+  margin: 32px auto 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+.section-change-explanation h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.section-change-explanation p {
+  font-size: 1.08rem;
+  color: #444;
+}
+@media (max-width: 600px) {
+  .oem-logos-big img {
+    width: 44px;
+    height: 44px;
+    padding: 4px;
+  }
+  .section-change-explanation {
+    padding: 12px 2px;
+  }
+}
+

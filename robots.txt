@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://unil-opal.uz/sitemap.xml
