@@ -1,27 +1,41 @@
-# unil-opal.uz
+# Unil Opal Uzbekistan
 
-A bilingual (Russian and Uzbek) website for Unil Opal lubricants in Uzbekistan.
+Official website of Unil Opal distributor in Uzbekistan.
 
-## Features
-- Multi-language support (Russian and Uzbek)
-- Responsive design
-- Product catalog
-- Company information and contact page
+## About the Project
 
-## Usage
-1. Clone or download the repository.
-2. Open `index.html` in your browser to view the homepage.
-3. Use the navigation menu to explore other pages (About Us, Products, Contact).
-4. Switch languages using the language buttons in the header.
+This website provides information about Unil Opal products, certifications, advantages, and contact details for clients in Uzbekistan.
 
 ## Project Structure
-- `index.html` – Main landing page
-- `about-us.html`, `products.html`, `contact.html`, `why-choose-us.html` – Additional pages
-- `styles/` – CSS files for layout and design
-- `images/` – Logos, product images, and other assets
-- `lang-switch.js`, `script.js` – JavaScript for interactivity and language switching
 
-## SEO
-- The site is optimized for search engines (Google, Yandex) with appropriate meta tags, `robots.txt`, and `sitemap.xml`.
+- `index.html` — Home page
+- `about-us.html` — About the company
+- `products.html` — Products
+- `why-choose-us.html` — Why Choose Us
+- `contact.html` — Contacts
+- `styles/` — CSS styles
+- `js/` — JavaScript files
+- `images/` — Images and logos
 
+## SEO and Localization
 
+- Supports Russian and Uzbek languages
+- Optimized meta tags, Open Graph, Twitter Card
+- `robots.txt` and `sitemap.xml` for search engines
+
+## How to Run
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/Joy2102-JY/Unil-Opal.git
+   ```
+2. Open `index.html` in your browser or deploy to your hosting.
+
+## Contacts
+
+- Phone: +998 94 252 52 99
+- Email: graceoil.uz@gmail.com
+
+---
+
+**For Russian and Uzbek versions, see `README_ru.md` and `README_uz.md`.**

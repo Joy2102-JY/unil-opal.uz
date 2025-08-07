@@ -2,35 +2,40 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title data-lang-key="contact_page_title">Контакты - Grace Oil & Unil Opal</title>
     <meta name="description" data-lang-key="contact_meta_desc" content="Свяжитесь с Grace Oil & Unil Opal. Наша команда готова ответить на ваши вопросы. Телефон, email, адрес и карта.">
     <meta property="og:title" data-lang-key="contact_og_title" content="Контакты - Grace Oil & Unil Opal">
     <meta property="og:description" data-lang-key="contact_og_desc" content="Свяжитесь с нами по вопросам продукции Unil Opal.">
     <meta property="og:image" content="images/unilopal-logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="canonical" href="https://unil-opal.uz/">
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/hero.css">
-    <link rel="stylesheet" href="styles/sections.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/grace.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="canonical" href="https://unil-opal.uz/contact.html">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="modern-theme">
     <header class="main-header">
         <div class="container header-content">
-            <a href="index.html" class="logo">
-                <img src="images/unilopal-logo.png" alt="Unil Opal Logo">
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" data-lang-key="nav_home">Главная</a></li>
-                    <li><a href="products.html" data-lang-key="nav_products">Продукция</a></li>
-                    <li><a href="why-choose-us.html" data-lang-key="nav_why_choose_us">Почему выбирают нас</a></li>
-                    <li><a href="about-us.html" data-lang-key="nav_about_us">О нас</a></li>
-                    <li><a href="contact.html" data-lang-key="nav_contact">Контакты</a></li>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header-brand">
+                <a href="index.html" class="logo-link">
+                    <img src="images/logo.png" alt="Grace Oil Logo" class="nav-logo">
+                    <div class="brand-divider"></div>
+                    <img src="images/unilopal-logo.png" alt="Unil Opal Logo" class="nav-logo">
+                </a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="index.html" data-lang-key="nav_home" class="nav-link">Главная</a></li>
+                    <li><a href="about-us.html" data-lang-key="nav_about_us" class="nav-link">О нас</a></li>
+                    <li><a href="products.html" data-lang-key="nav_products" class="nav-link">Продукция</a></li>
+                    <li><a href="why-choose-us.html" data-lang-key="nav_why_choose_us" class="nav-link">Почему выбирают нас</a></li>
+                    <li><a href="contact.html" data-lang-key="nav_contact" class="nav-link active">Контакты</a></li>
                 </ul>
             </nav>
             <div class="language-switcher">
@@ -38,76 +43,99 @@
                     <img src="images/rus.png" alt="Русский">
                 </button>
                 <button id="lang-uz" class="lang-button" data-lang="uz">
-                    <img src="images/uzb.png" alt="O'zbekcha">
+                    <img src="images/uzb.png" alt="O'zbekча">
                 </button>
             </div>
         </div>
     </header>
 
-    <main>
+    <main class="contact-main">
         <div class="container">
-            <h1 data-lang-key="contact_h1_title">Свяжитесь с нами</h1>
+            <div class="welcome-section">
+                <h1 class="page-title" data-lang-key="contact_h1_title">Свяжитесь с нами</h1>
+                <div class="welcome-content">
+                    <p class="welcome-text" data-lang-key="contact_welcome_text">
+                        Мы здесь, чтобы помочь вам! Наша команда готова ответить на все ваши вопросы о продукции Unil Opal.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="tel:+998942525299" class="cta-button primary">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+998 94 252 52 99</span>
+                        </a>
+                        <a href="https://t.me/graceoil" class="cta-button secondary">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <section class="contact-section">
-                <p class="section-intro-text" data-lang-key="contact_intro_text">
-                    Наша команда готова ответить на ваши вопросы и предоставить всю необходимую информацию о продукции Unil Opal.
-                </p>
-
                 <div class="contact-content-grid">
-                    <div class="contact-form-container">
-                        <h2 data-lang-key="contact_form_title">Оставьте нам сообщение</h2>
-                        <form class="contact-form" action="#" method="POST">
-                            <div class="form-group">
-                                <label for="name" data-lang-key="form_name_label">Имя</label>
-                                <input type="text" id="name" name="name" required data-lang-key="form_name_placeholder" placeholder="Ваше имя">
+                    <div class="contact-form-container glass-card">
+                        <h2 class="form-title" data-lang-key="contact_form_title">
+                            <i class="fas fa-envelope-open-text"></i>
+                            Оставьте нам сообщение
+                        </h2>
+                        
+                        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                            <div class="form-group floating">
+                                <input type="text" id="name" name="name" required class="form-input" placeholder=" ">
+                                <label for="name" class="form-label" data-lang-key="form_name_label">Имя</label>
+                                <i class="fas fa-user input-icon"></i>
                             </div>
-                            <div class="form-group">
-                                <label for="email" data-lang-key="form_email_label">Email</label>
-                                <input type="email" id="email" name="email" required data-lang-key="form_email_placeholder" placeholder="Ваш email">
+
+                            <div class="form-group floating">
+                                <input type="tel" id="phone" name="phone" required class="form-input" 
+                                       placeholder=" " pattern="\+998[0-9]{9}">
+                                <label for="phone" class="form-label" data-lang-key="form_phone_label">Телефон</label>
+                                <i class="fas fa-phone input-icon"></i>
                             </div>
-                            <div class="form-group">
-                                <label for="phone" data-lang-key="form_phone_label">Телефон</label>
-                                <input type="tel" id="phone" name="phone" data-lang-key="form_phone_placeholder" placeholder="Ваш телефон (необязательно)">
+
+                            <div class="form-group floating">
+                                <textarea id="message" name="message" rows="4" required class="form-input" 
+                                          placeholder=" "></textarea>
+                                <label for="message" class="form-label" data-lang-key="form_message_label">Сообщение</label>
+                                <i class="fas fa-comment input-icon"></i>
                             </div>
-                            <div class="form-group">
-                                <label for="message" data-lang-key="form_message_label">Сообщение</label>
-                                <textarea id="message" name="message" rows="6" required data-lang-key="form_message_placeholder" placeholder="Ваше сообщение"></textarea>
-                            </div>
-                            <button type="submit" class="submit-button" data-lang-key="form_submit_button">Отправить</button>
+
+                            <button type="submit" class="submit-button">
+                                <span class="button-content">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span data-lang-key="form_submit_button">Отправить</span>
+                                </span>
+                            </button>
                         </form>
                     </div>
 
-                    <div class="contact-info-map-container">
-                        <h2 data-lang-key="contact_info_title">Контактная информация</h2>
-
+                    <!-- Contact Info Block -->
+                    <div class="contact-info-container card-modern">
                         <div class="contact-details">
                             <div class="contact-item">
-                                <i class="fas fa-phone-alt contact-icon"></i>
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
                                 <div class="item-text">
-                                    <h4 data-lang-key="contact_phones_label">Телефоны:</h4>
+                                    <h3 data-lang-key="contact_phones_title">Телефоны</h3>
                                     <p><a href="tel:+998942525299">+998 94 252 52 99</a></p>
                                     <p><a href="tel:+998942626299">+998 94 262 62 99</a></p>
                                 </div>
                             </div>
                             <div class="contact-item">
-                                <i class="fas fa-envelope contact-icon"></i>
-                                <div class="item-text">
-                                    <h4 data-lang-key="contact_email_label">Email:</h4>
-                                    <p><a href="mailto:graceoil.uz@gmail.com">graceoil.uz@gmail.com</a></p>
+                                <div class="icon-wrapper">
+                                    <i class="fas fa-map-marker-alt"></i>
                                 </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt contact-icon"></i>
                                 <div class="item-text">
-                                    <h4 data-lang-key="contact_address_label">Адрес:</h4>
-                                    <p>г. Ташкент, ул. Мирзо Улугбека 67/27</p>
+                                    <h3 data-lang-key="contact_address_title">Адрес</h3>
+                                    <p data-lang-key="footer_address">г. Ташкент, ул. Мирзо Улугбека 67/27</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="yandex-map-container">
-                            <h3 data-lang-key="contact_map_title">Наше расположение на карте</h3>
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c&source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                        <div class="map-section">
+                            <div class="map-container">
+                                <div id="map"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,15 +144,115 @@
     </main>
 
     <footer class="main-footer">
-        <div class="container footer-content">
-            <p>© <span id="current-year-footer-contact"></span> <span data-lang-key="footer_copyright_text_about_page">Inoyat Grace Group. Все права защищены.</span></p>
-            <div class="footer-links">
-                <a href="privacy-policy.html" data-lang-key="footer_privacy">Политика конфиденциальности</a>
-                <a href="terms-of-service.html" data-lang-key="footer_terms">Условия использования</a>
+        <div class="footer-content">
+            <!-- First Column - Logo and Description -->
+            <div class="footer-column">
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logo.png" alt="Grace Oil" class="logo-img">
+                </a>
+                <p data-lang-key="footer_company_desc">
+                    Официальный дистрибьютор Unil Opal в Узбекистане
+                </p>
+                <!-- Relocated Social Networks Here -->
+                <div class="social-links">
+                    <a href="https://facebook.com/graceoiluz" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/graceoiluz" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://t.me/graceoiluz" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://youtube.com/graceoiluz" class="social-link" target="_blank" rel="noopener">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
             </div>
+
+            <!-- Rest of the footer columns remain the same -->
+            <div class="footer-column">
+                <h3 class="footer-title" data-lang-key="footer_quick_links">Быстрые ссылки</h3>
+                <div class="footer-links">
+                    <a href="about-us.html" class="footer-link" data-lang-key="nav_about_us">О нас</a>
+                    <a href="products.html" class="footer-link" data-lang-key="nav_products">Продукция</a>
+                    <a href="why-choose-us.html" class="footer-link" data-lang-key="nav_why_choose_us">Почему выбирают нас</a>
+                    <a href="contact.html" class="footer-link" data-lang-key="nav_contact">Контакты</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-title" data-lang-key="footer_contact">Контакты</h3>
+                <div class="footer-links">
+                    <a href="tel:+998942525299" class="footer-link">+998 94 252 52 99</a>
+                    <a href="tel:+998942626299" class="footer-link">+998 94 262 62 99</a>
+                    <p class="footer-link" data-lang-key="footer_address">г. Ташкент, ул. Мирзо Улугбека 67/27</p>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-title" data-lang-key="footer_hours">Режим работы</h3>
+                <div class="footer-links">
+                    <p class="footer-link"><span data-lang-key="footer_weekdays">Пн-Пт:</span> 9:00 - 18:00</p>
+                    <p class="footer-link"><span data-lang-key="footer_saturday">Сб:</span> 10:00 - 15:00</p>
+                    <p class="footer-link"><span data-lang-key="footer_sunday">Вс:</span> <span data-lang-key="footer_closed">Выходной</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> <span data-lang-key="footer_copyright">Grace Group. Все права защищены.</span></p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+    <script>
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                center: [41.317978, 69.285294], // Coordinates for Mirzo Ulugbek 67/27
+                zoom: 16,
+                controls: ['zoomControl', 'fullscreenControl']
+            });
+
+            var myPlacemark = new ymaps.Placemark([41.317978, 69.285294], {
+                hintContent: 'Grace Oil & Unil Opal',
+                balloonContent: 'г. Ташкент, ул. Мирзо Улугбека 67/27'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'images/map-marker.png',
+                iconImageSize: [40, 40],
+                iconImageOffset: [-20, -40]
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        });
+    </script>
+
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(XXXXXXXXX, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/XXXXXXXXX" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
 </body>
 </html>

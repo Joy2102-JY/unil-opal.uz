@@ -2,133 +2,292 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title data-lang-key="why_choose_us_page_title">Unil Opal - Почему выбирают нас</title>
     <meta name="description" data-lang-key="why_choose_us_meta_desc" content="Unil Opal — французские смазочные материалы. Более 60 лет качества, инноваций и надежности.">
     <meta property="og:title" data-lang-key="why_choose_us_og_title" content="Unil Opal — Французские Смазочные Материалы">
     <meta property="og:description" data-lang-key="why_choose_us_og_desc" content="Официальный сайт Unil Opal. Моторные масла, технические жидкости, международные сертификаты и премиум-качество.">
     <meta property="og:image" content="images/unilopal-logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="canonical" href="https://unil-opal.uz/">
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/hero.css">
-    <link rel="stylesheet" href="styles/sections.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/products.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="canonical" href="https://unil-opal.uz/why-choose-us.html">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/why-choose-us.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="container header-content">
-            <a href="index.html" class="logo">
-                <img src="images/unilopal-logo.png" alt="Unil Opal Logo">
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" data-lang-key="nav_home">Главная</a></li>
-                    <li><a href="products.html" data-lang-key="nav_products">Продукция</a></li>
-                    <li><a href="why-choose-us.html" data-lang-key="nav_why_choose_us">Почему выбирают нас</a></li>
-                    <li><a href="about-us.html" data-lang-key="nav_about_us">О нас</a></li>
-                    <li><a href="contact.html" data-lang-key="nav_contact">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="language-switcher">
-                <button id="lang-ru" class="lang-button active" data-lang="ru">
-                    <img src="images/rus.png" alt="Русский">
-                </button>
-                <button id="lang-uz" class="lang-button" data-lang="uz">
-                    <img src="images/uzb.png" alt="O'zbekcha">
-                </button>
-            </div>
-        </div>
-    </header>
+    <!-- Use this for ALL pages -->
+<header class="main-header">
+  <div class="container header-content">
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="header-brand">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Grace Oil Logo" class="nav-logo">
+        <div class="brand-divider"></div>
+        <img src="images/unilopal-logo.png" alt="Unil Opal Logo" class="nav-logo">
+      </a>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about-us.html">О нас</a></li>
+        <li><a href="products.html">Продукция</a></li>
+        <li><a href="why-choose-us.html">Почему выбирают нас</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </nav>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+      <button id="lang-ru" class="lang-button" data-lang="ru">
+        <img src="images/rus.png" alt="Русский">
+      </button>
+      <button id="lang-uz" class="lang-button" data-lang="uz">
+        <img src="images/uzb.png" alt="O'zbekcha">
+      </button>
+    </div>
+  </div>
+</header>
 
     <main>
-        <div class="container">
-            <h1 data-lang-key="why_choose_us_h1_title">Unil Opal: Ваша уверенность в качестве и защите</h1>
-            <section>
-                <h2 data-lang-key="cert_section_title">Сертификаты и международные стандарты</h2>
-                <p data-lang-key="cert_section_intro">Наша продукция соответствует строжайшим международным стандартам качества и безопасности. Каждый сертификат подтверждает нашу приверженность превосходству:</p>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <img src="images/iso9001.png" alt="ISO 9001 Icon" class="feature-icon">
-                        <h3>ISO 9001</h3>
+        <section class="why-choose-section">
+            <div class="container">
+                <h1 class="section-title" data-lang-key="why_choose_us_h1_title">
+                    Unil Opal: Ваша уверенность в качестве и защите
+                </h1>
+
+                <!-- Triple Certification Section -->
+                <div class="triple-cert-intro">
+                    <h2 class="section-subtitle" data-lang-key="triple_cert_title">
+                        Тройная сертификация для вашей уверенности
+                    </h2>
+                    <p class="section-description" data-lang-key="triple_cert_desc">
+                        Качество, безопасность и бережное отношение к окружающей среде на службе клиентов: ISO 9001, ISO 14001 и ISO 45001.
+                    </p>
+                </div>
+
+                <div class="cert-benefits-grid">
+                    <div class="benefit-card quality">
+                        <h3 data-lang-key="triple_cert_quality_title">Качество, услуги и инновации</h3>
+                        <p data-lang-key="triple_cert_quality_text">
+                            С 1994 года компания Unil Opal сертифицирована по стандарту ISO 9001, что гарантирует своим клиентам постоянное качество продукции и услуг, а также постоянные технические инновации. Продукция соответствует стандартам и спецификациям всех основных производителей и требованиям международных организаций (ACEA, API).
+                        </p>
+                    </div>
+                    <div class="benefit-card environment">
+                        <h3 data-lang-key="triple_cert_environment_title">Сильная экологическая политика</h3>
+                        <p data-lang-key="triple_cert_environment_text">
+                            Компания Unil Opal, занимающая гражданскую и ответственную позицию, на протяжении многих лет придерживается строгой экологической политики и с 1998 года имеет сертификат ISO 14001. Каждый заказ обрабатывается с постоянной заботой о снижении воздействия на окружающую среду.
+                        </p>
+                    </div>
+                    <div class="benefit-card safety">
+                        <h3 data-lang-key="triple_cert_safety_title">Здоровье и безопасность сотрудников</h3>
+                        <p data-lang-key="triple_cert_safety_text">
+                            Заботясь о здоровье и безопасности своих сотрудников, компания в 2020 году получила сертификат ISO 45001. Прилагаются все усилия для снижения рисков на рабочем месте через систему профилактики, которая регулярно обновляется и контролируется.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Certificates Section -->
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <img src="images/iso9001.png" alt="ISO 9001" class="cert-icon">
+                        <h2>ISO 9001</h2>
                         <p data-lang-key="iso9001_benefit">Стабильное качество, надежность.</p>
                     </div>
-                    <div class="feature-item">
-                        <img src="images/iso14001.png" alt="ISO 14001 Icon" class="feature-icon">
-                        <h3>ISO 14001</h3>
+                    <div class="cert-card">
+                        <img src="images/iso14001.png" alt="ISO 14001" class="cert-icon">
+                        <h2>ISO 14001</h2>
                         <p data-lang-key="iso14001_benefit">Партнерство с экологически ответственным производителем.</p>
                     </div>
-                    <div class="feature-item">
-                        <img src="images/iso45001.jpg" alt="ISO 45001" class="feature-icon">
-                        <h3>ISO 45001</h3>
+                    <div class="cert-card">
+                        <img src="images/iso45001.jpg" alt="ISO 45001" class="cert-icon">
+                        <h2>ISO 45001</h2>
                         <p data-lang-key="iso45001_benefit">Забота о безопасности персонала и соблюдение норм.</p>
                     </div>
-                    <div class="feature-item">
-                        <img src="images/api.jpg" alt="API" class="feature-icon">
-                        <h3>API</h3>
+                    <div class="cert-card">
+                        <img src="images/api.jpg" alt="API" class="cert-icon">
+                        <h2>API</h2>
                         <p data-lang-key="api_benefit">Соответствие мировым стандартам моторных масел.</p>
                     </div>
-                    <div class="feature-item">
-                        <img src="images/acea.jpg" alt="ACEA" class="feature-icon">
-                        <h3>ACEA</h3>
+                    <div class="cert-card">
+                        <img src="images/acea.jpg" alt="ACEA" class="cert-icon">
+                        <h2>ACEA</h2>
                         <p data-lang-key="acea_benefit">Одобрение ведущих европейских автоконцернов.</p>
                     </div>
-                    <div class="feature-item">
-                        <img src="images/nsfh1.jpg" alt="NSF H1" class="feature-icon">
-                        <h3>NSF H1</h3>
+                    <div class="cert-card">
+                        <img src="images/nsfh1.jpg" alt="NSF H1" class="cert-icon">
+                        <h2>NSF H1</h2>
                         <p data-lang-key="nsfh1_benefit">Безопасность для использования в пищевой промышленности.</p>
                     </div>
-                    <div class="feature-item">
-                        <img src="images/halal.jpg" alt="HALAL" class="feature-icon">
-                        <h3>HALAL</h3>
+                    <div class="cert-card">
+                        <img src="images/halal.jpg" alt="HALAL" class="cert-icon">
+                        <h2>HALAL</h2>
                         <p data-lang-key="halal_benefit">Соответствие требованиям Халяль.</p>
                     </div>
-                    <div class="feature-item">
-                        <img src="images/eu.jpg" alt="EU Ecolabel" class="feature-icon">
-                        <h3>EU Ecolabel</h3>
+                    <div class="cert-card">
+                        <img src="images/eu.jpg" alt="EU Ecolabel" class="cert-icon">
+                        <h2>EU Ecolabel</h2>
                         <p data-lang-key="ecolabel_benefit">Сниженное воздействие на окружающую среду.</p>
                     </div>
                 </div>
-                <p data-lang-key="oem_approvals_intro">Официальные допуски от ведущих автопроизводителей подтверждают, что масла Unil Opal прошли строжайшие испытания и рекомендованы для использования в современных двигателях. Это обеспечивает сохранение гарантии на ваш автомобиль и гарантированную совместимость.</p>
-                <div class="oem-logos-big">
-                    <img src="images/logo-volvo.png" alt="Volvo">
-                    <img src="images/Volkswagen_logo.png" alt="Volkswagen">
-                    <img src="images/logo-mercedes.png" alt="Mercedes-Benz">
-                    <img src="images/bmw-logo-emblem-hd-png-735811696610137mdimjots9m.png" alt="BMW">
-                    <img src="images/logo-renault.png" alt="Renault">
-                    <img src="images/porsche-911-car-desktop-wallpaper-logo-png-favpng-fSPJk53AzHu5C2AG3bqtHHfjf.jpg" alt="Porsche">
-                </div>
-                <ul class="oem-approvals-list-big">
-                    <li><strong data-lang-key="oem_volvo">Volvo</strong></li>
-                    <li><strong data-lang-key="oem_volkswagen">Volkswagen:</strong> VW 504.00 / 507.00</li>
-                    <li><strong data-lang-key="oem_mercedes">Mercedes-Benz:</strong> MB 229.51 / 229.52</li>
-                    <li><strong data-lang-key="oem_bmw">BMW:</strong> Longlife-04</li>
-                    <li><strong data-lang-key="oem_renault">Renault:</strong> RN0700 / RN0710</li>
-                    <li><strong data-lang-key="oem_porsche">Porsche:</strong> C30</li>
-                    <li data-lang-key="oem_and_more">и др.</li>
-                </ul>
-                <h2 class="premium-title" data-lang-key="premium_price_title">Премиум-качество по цене стандартного</h2>
-                <div class="premium-content">
-                    <p class="premium-description" data-lang-key="premium_price_text">С Unil Opal вы получаете все преимущества масел высокого класса — надежную защиту двигателя, экономию топлива, экологичность и международные одобрения — без переплаты за бренд. Мы предлагаем французское премиум-качество, доступное каждому.</p>
-                    <p class="premium-cta" data-lang-key="premium_price_cta">Профессионалы выбирают умно — выбирают Unil Opal.</p>
-                </div>
-            </section>
+                <!-- OEM Section -->
+                <section class="oem-section-modern">
+    <h2 class="oem-title" data-lang-key="oem_approvals_title">
+        Одобрено ведущими производителями
+    </h2>
+    <p class="oem-intro" data-lang-key="oem_approvals_intro">
+        Официальные допуски от ведущих автопроизводителей подтверждают, что масла Unil Opal прошли строжайшие испытания и рекомендованы для использования в современных двигателях. Это обеспечивает сохранение гарантии на ваш автомобиль и гарантированную совместимость.
+    </p>
+    <div class="oem-logos-modern">
+        <div class="oem-logo-card">
+            <img src="images/logo-volvo.png" alt="Volvo" loading="lazy" data-lang-key="oem_logo_volvo">
         </div>
-    </main>
+        <div class="oem-logo-card">
+            <img src="images/Volkswagen_logo.png" alt="Volkswagen" loading="lazy" data-lang-key="oem_logo_volkswagen">
+        </div>
+        <div class="oem-logo-card">
+            <img src="images/logo-mercedes.png" alt="Mercedes-Benz" loading="lazy" data-lang-key="oem_logo_mercedes">
+        </div>
+        <div class="oem-logo-card">
+            <img src="images/porsche-911-car-desktop-wallpaper-logo-png-favpng-fSPJk53AzHu5C2AG3bqtHHfjf.jpg" alt="Porsche" loading="lazy" data-lang-key="oem_logo_porsche">
+        </div>
+        <div class="oem-logo-card">
+            <img src="images/bmw-logo-emblem-hd-png-735811696610137mdimjots9m.png" alt="BMW" loading="lazy" data-lang-key="oem_logo_bmw">
+        </div>
+        <div class="oem-logo-card">
+            <img src="images/logo-renault.png" alt="Renault" loading="lazy" data-lang-key="oem_logo_renault">
+        </div>
+    </div>
+</section>
 
+                <!-- Premium Section -->
+                <section class="premium-section">
+                    <h2 class="premium-title" data-lang-key="premium_price_title">
+                        Премиум-качество по цене стандартного
+                    </h2>
+                    <div class="premium-content">
+                        <p class="premium-description" data-lang-key="premium_price_text">
+                            С Unil Opal вы получаете все преимущества масел высокого класса без переплаты за бренд
+                        </p>
+                        <p class="premium-cta" data-lang-key="premium_price_cta">
+                            Профессионалы выбирают умно — выбирают Unil Opal
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <!-- Replace the existing footer with this enhanced version -->
     <footer class="main-footer">
-        <div class="container footer-content">
-            <p>© <span id="current-year-footer-why"></span><span data-lang-key="footer_copyright_text_why_choose_us"> Все права защищены.</span></p>
-            <div class="footer-links">
-                <a href="privacy-policy.html" data-lang-key="footer_privacy">Политика конфиденциальности</a>
-                <a href="terms-of-service.html" data-lang-key="footer_terms">Условия использования</a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column company-info">
+                    <img src="images/logo.png" alt="Unil Opal Logo" class="footer-logo">
+                    <p class="company-desc" data-lang-key="footer_company_desc">
+                        Официальный дистрибьютор французских смазочных материалов Unil Opal в Узбекистане
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/unilopaluz" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/unilopaluz" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://t.me/unilopaluz" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column quick-links">
+                    <h3 data-lang-key="footer_quick_links">Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html" data-lang-key="nav_home">Главная</a></li>
+                        <li><a href="about-us.html" data-lang-key="nav_about_us">О нас</a></li>
+                        <li><a href="products.html" data-lang-key="nav_products">Продукция</a></li>
+                        <li><a href="why-choose-us.html" data-lang-key="nav_why_choose_us">Почему выбирают нас</a></li>
+                        <li><a href="contact.html" data-lang-key="nav_contact">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column contact-info">
+                    <h3 data-lang-key="footer_contact">Контактная информация</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-lang-key="footer_address">г. Ташкент, ул. Мирзо Улугбека 67/27</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-numbers">
+                                <a href="tel:+998942525299">+998 94 252 52 99</a>
+                                <a href="tel:+998942626299">+998 94 262 62 99</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:graceoil.uz@gmail.com">graceoil.uz@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column working-hours">
+                    <h3 data-lang-key="footer_hours">Режим работы</h3>
+                    <ul>
+                        <li>
+                            <span data-lang-key="footer_weekdays">Пн-Пт:</span>
+                            <span>09:00 - 18:00</span>
+                        </li>
+                        <li>
+                            <span data-lang-key="footer_saturday">Сб:</span>
+                            <span>10:00 - 15:00</span>
+                        </li>
+                        <li>
+                            <span data-lang-key="footer_sunday">Вс:</span>
+                            <span data-lang-key="footer_closed">Выходной</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="current-year-footer-about"></span> <span data-lang-key="footer_copyright">Grace Group 2024 . Все права защищены.</span></p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html" data-lang-key="footer_privacy">Политика конфиденциальности</a>
+                    <a href="terms-of-service.html" data-lang-key="footer_terms">Условия использования</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+   <script type="module" src="js/script.js"></script>
+
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(XXXXXXXXX, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/XXXXXXXXX" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
 </html>
